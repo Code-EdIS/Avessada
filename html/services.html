@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore general software categories for modern businesses.">
+
+  <title>Avessada | Software Solutions</title>
+
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <link rel="stylesheet" href="../components.css">
+
+  <script src="../js/i18n.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/animations.js" defer></script>
+</head>
+
+<body data-title-key="meta.title" data-description-key="meta.description">
+
+  <header class="site-header">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="brand-mark font-extrabold">A</span>
+        <span class="text-lg font-extrabold tracking-tight text-brand-950">Avessada<span class="text-brand-600">.</span></span>
+      </a>
+
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Main navigation">
+        <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
+        <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
+        <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="flex gap-1">
+          <button class="language-button" type="button" data-lang="en">EN</button>
+          <button class="language-button" type="button" data-lang="cs">CZ</button>
+        </div>
+
+        <a href="contacts.html" class="btn-primary hidden sm:inline-flex">
+          <span data-i18n="nav.cta">Let's talk</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <button class="menu-toggle md:hidden" type="button" data-menu-toggle
+          aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open navigation menu">
+          <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-navigation" class="mobile-menu md:hidden" data-mobile-menu aria-label="Mobile navigation">
+      <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
+      <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
+      <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8" data-animate>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span aria-hidden="true">/</span>
+          <span data-i18n="services.eyebrow">Our solutions</span>
+        </nav>
+
+        <div class="max-w-3xl">
+          <span class="section-eyebrow" data-i18n="services.eyebrow">Our solutions</span>
+          <h1 class="section-title text-5xl sm:text-6xl" data-i18n="services.title">
+            Explore the software landscape.
+          </h1>
+          <p class="section-description" data-i18n="services.description">
+            Discover general software categories that can support different business functions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOFTWARE CATEGORIES -->
+    <section class="section-padding">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="mb-10 flex items-start gap-3 rounded-xl border border-blue-100 bg-blue-50 p-4 text-sm leading-6 text-blue-900" data-animate>
+          <span class="text-lg" aria-hidden="true">ⓘ</span>
+          <p data-i18n="services.notice">
+            The categories below are illustrative. Availability and suitability depend on individual requirements.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="service-card" data-animate>
+            <div class="icon-box mb-6">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <path d="M3 9h18M8 4v5M8 13h8M8 16h5"/>
+              </svg>
+            </div>
+            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service1.title">Business management</h2>
+            <p class="leading-7 text-slate-600" data-i18n="service1.text">
+              Software categories for organizing operations, information and everyday business activities.
+            </p>
+            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
+              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate>
+            <div class="icon-box mb-6">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <circle cx="9" cy="8" r="3"/>
+                <circle cx="17" cy="9" r="2"/>
+                <path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14c3.3 0 5 2 5 4"/>
+              </svg>
+            </div>
+            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service2.title">Productivity and collaboration</h2>
+            <p class="leading-7 text-slate-600" data-i18n="service2.text">
+              Tools for team communication, document workflows and coordinated work.
+            </p>
+            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
+              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate>
+            <div class="icon-box mb-6">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M4 19V5M4 19h17"/>
+                <path d="m7 15 4-5 3 2 5-7"/>
+              </svg>
+            </div>
+            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service3.title">Data and analytics</h2>
+            <p class="leading-7 text-slate-600" data-i18n="service3.text">
+              Solutions that help organize information, explore trends and support informed decisions.
+            </p>
+            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
+              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate>
+            <div class="icon-box mb-6">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="4" y="10" width="16" height="11" rx="2"/>
+                <path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/>
+              </svg>
+            </div>
+            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service4.title">Security and access</h2>
+            <p class="leading-7 text-slate-600" data-i18n="service4.text">
+              Software categories related to identity management, access control and digital protection.
+            </p>
+            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
+              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate>
+            <div class="icon-box mb-6">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="7" rx="2"/>
+                <rect x="3" y="14" width="18" height="7" rx="2"/>
+                <path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/>
+              </svg>
+            </div>
+            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service5.title">Infrastructure and systems</h2>
+            <p class="leading-7 text-slate-600" data-i18n="service5.text">
+              Tools for managing software environments, system operations and digital resources.
+            </p>
+            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
+              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate>
+            <div class="icon-box mb-6">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="m12 3 2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3Z"/>
+                <path d="m19 15 1.2 2.8L23 19l-2.8 1.2L19 23l-1.2-2.8L15 19l2.8-1.2L19 15Z"/>
+              </svg>
+            </div>
+            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service6.title">Specialized software</h2>
+            <p class="leading-7 text-slate-600" data-i18n="service6.text">
+              Software for specific operational needs, depending on the organization and its requirements.
+            </p>
+            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
+              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section-padding bg-slate-50">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="section-heading" data-animate>
+          <span class="section-eyebrow" data-i18n="services.process.eyebrow">How we work</span>
+          <h2 class="section-title" data-i18n="services.process.title">A straightforward process.</h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          <article data-animate>
+            <span class="mb-5 block text-4xl font-extrabold text-blue-600">01</span>
+            <h3 class="mb-3 text-xl font-bold" data-i18n="process1.title">Understand</h3>
+            <p class="leading-7 text-slate-600" data-i18n="process1.text">We start by learning about your needs and priorities.</p>
+          </article>
+
+          <article data-animate>
+            <span class="mb-5 block text-4xl font-extrabold text-blue-600">02</span>
+            <h3 class="mb-3 text-xl font-bold" data-i18n="process2.title">Explore</h3>
+            <p class="leading-7 text-slate-600" data-i18n="process2.text">We consider relevant categories and possible options.</p>
+          </article>
+
+          <article data-animate>
+            <span class="mb-5 block text-4xl font-extrabold text-blue-600">03</span>
+            <h3 class="mb-3 text-xl font-bold" data-i18n="process3.title">Connect</h3>
+            <p class="leading-7 text-slate-600" data-i18n="process3.text">We help move the conversation toward a suitable solution.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="pb-24 pt-16">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="cta-panel" data-animate>
+          <div class="relative z-10 max-w-2xl">
+            <h2 class="text-3xl font-extrabold sm:text-4xl" data-i18n="services.cta.title">
+              Looking for a software solution?
+            </h2>
+            <p class="mt-4 leading-7 text-slate-300" data-i18n="services.cta.text">
+              Get in touch to discuss your requirements and explore the available options.
+            </p>
+            <a href="contacts.html" class="btn-white mt-7">
+              <span data-i18n="services.cta.button">Discuss your needs</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div class="sm:col-span-2">
+        <a href="index.html" class="flex items-center gap-3 text-white">
+          <span class="brand-mark font-extrabold">A</span>
+          <span class="text-lg font-extrabold">Avessada.</span>
+        </a>
+        <p class="mt-5 max-w-sm leading-7 text-slate-400" data-i18n="footer.description">Software solutions and technology options for modern businesses.</p>
+      </div>
+      <div>
+        <h3 class="mb-5 font-bold text-white" data-i18n="footer.navigation">Navigation</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a class="footer-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="footer-link" href="about.html" data-i18n="nav.about">About us</a></li>
+          <li><a class="footer-link" href="services.html" data-i18n="nav.services">Solutions</a></li>
+          <li><a class="footer-link" href="contacts.html" data-i18n="nav.contacts">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-5 font-bold text-white" data-i18n="footer.contact">Get in touch</h3>
+        <a class="footer-link text-sm" href="contacts.html" data-i18n="nav.cta">Let's talk</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-slate-500 sm:flex-row sm:justify-between lg:px-8">
+        <p>© <span data-current-year></span> Avessada. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p data-i18n="footer.disclaimer">Software categories are illustrative and do not imply specific product availability.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
