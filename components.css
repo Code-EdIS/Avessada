@@ -709,6 +709,451 @@ textarea.form-control {
   animation: float 5s ease-in-out infinite;
 }
 
+/* ========================================
+   CONTACT PAGE
+======================================== */
+
+/* Typography */
+
+.contact-hero h1,
+.contact-form-card h2,
+.contact-method h3,
+.contact-privacy-card h3 {
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* Decorative background */
+
+.contact-glow {
+    position: absolute;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(80px);
+}
+
+.contact-glow-right {
+    top: -8rem;
+    right: -8rem;
+    background: rgba(59, 130, 246, 0.10);
+}
+
+.contact-glow-left {
+    bottom: -10rem;
+    left: -5rem;
+    background: rgba(99, 102, 241, 0.10);
+}
+
+
+/* Contact information cards */
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.025);
+
+    transition:
+        border-color 180ms ease,
+        background-color 180ms ease,
+        transform 180ms ease;
+}
+
+.contact-method:hover {
+    transform: translateY(-2px);
+    border-color: rgba(96, 165, 250, 0.35);
+    background: rgba(255, 255, 255, 0.045);
+}
+
+
+/* Contact icons */
+
+.contact-icon {
+    display: flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(96, 165, 250, 0.20);
+    border-radius: 0.75rem;
+    background: rgba(59, 130, 246, 0.10);
+    color: #93c5fd;
+}
+
+
+/* Privacy card */
+
+.contact-privacy-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.25rem;
+
+    border: 1px solid rgba(148, 163, 184, 0.20);
+    border-radius: 1rem;
+    background: rgba(15, 23, 42, 0.55);
+}
+
+.contact-privacy-icon {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    color: #93c5fd;
+}
+
+
+/* Form */
+
+.contact-form-card {
+    min-width: 0;
+}
+
+.contact-label {
+    display: block;
+    margin-bottom: 0.5rem;
+
+    color: #e2e8f0;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.contact-input {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 0.9rem 1rem;
+
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 0.75rem;
+
+    background: rgba(255, 255, 255, 0.035);
+    color: #f8fafc;
+
+    font: inherit;
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    outline: none;
+
+    transition:
+        border-color 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.contact-input::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+.contact-input:focus {
+    border-color: #60a5fa;
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.12);
+}
+
+.contact-input:focus-visible {
+    outline: 2px solid rgba(96, 165, 250, 0.35);
+    outline-offset: 2px;
+}
+
+.contact-input option {
+    background: #0b1729;
+    color: #f8fafc;
+}
+
+.contact-textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+
+/* Form feedback */
+
+.contact-feedback {
+    padding: 1rem;
+
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    border-radius: 0.75rem;
+
+    background: rgba(59, 130, 246, 0.08);
+    color: #dbeafe;
+
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.contact-feedback[hidden] {
+    display: none;
+}
+
+.contact-feedback.is-error {
+    border-color: rgba(248, 113, 113, 0.35);
+    background: rgba(127, 29, 29, 0.18);
+    color: #fecaca;
+}
+
+.contact-feedback.is-success {
+    border-color: rgba(74, 222, 128, 0.30);
+    background: rgba(20, 83, 45, 0.18);
+    color: #bbf7d0;
+}
+
+
+/* Email action buttons */
+
+.contact-action {
+    display: inline-flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.75rem 1.25rem;
+
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        transform 180ms ease,
+        background-color 180ms ease,
+        border-color 180ms ease,
+        opacity 180ms ease;
+}
+
+.contact-action:hover {
+    transform: translateY(-1px);
+}
+
+.contact-action:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+.contact-action:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.contact-action-primary {
+    border-color: #60a5fa;
+    background: #3b82f6;
+    color: #ffffff;
+}
+
+.contact-action-primary:hover {
+    background: #2563eb;
+}
+
+.contact-action-secondary {
+    border-color: rgba(148, 163, 184, 0.25);
+    background: rgba(255, 255, 255, 0.04);
+    color: #e2e8f0;
+}
+
+.contact-action-secondary:hover {
+    border-color: rgba(96, 165, 250, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* Section divider */
+
+.contact-divider {
+    height: 1px;
+    border: 0;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(148, 163, 184, 0.20),
+        transparent
+    );
+}
+
+/* =========================================
+   CONTACT PAGE — VISUAL FIXES
+   ========================================= */
+
+/* HERO: sfondo scuro e testo leggibile */
+.contact-hero{
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    color: #ffffff;
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(59, 130, 246, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1220 0%,
+            #111c32 55%,
+            #172554 100%
+        );
+}
+
+/* Impedisce agli elementi testuali della hero
+   di ereditare colori scuri o trasparenti */
+.contact-hero h1,
+.contact-hero h2,
+.contact-hero h3,
+.contact-hero p,
+.contact-hero span,
+.contact-hero a {
+    color: #ffffff;
+}
+
+/* Testi secondari della hero */
+.contact-hero .section-description {
+    color: #cbd5e1;
+}
+
+/* Elemento decorativo della hero */
+.contact-glow {
+    pointer-events: none;
+    background: rgba(59, 130, 246, 0.12);
+    filter: blur(70px);
+}
+
+/* =========================================
+   CONTACT FORM — CONTRASTO E LEGGIBILITÀ
+   ========================================= */
+
+/* Scheda del form */
+.contact-form-card {
+    color: #0f172a;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 1.25rem;
+}
+
+/* Titoli dentro il form */
+.contact-form-card h1,
+.contact-form-card h2,
+.contact-form-card h3,
+.contact-form-card h4 {
+    color: #0f172a;
+}
+
+/* Etichette dei campi */
+.contact-form-card .contact-label,
+.contact-form-card label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Campi di testo */
+.contact-form-card .contact-input,
+.contact-form-card .contact-textarea {
+    display: block;
+    width: 100%;
+    color: #0f172a;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.625rem;
+    padding: 0.8rem 0.9rem;
+    font: inherit;
+    transition:
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+/* Testo segnaposto */
+.contact-form-card .contact-input::placeholder,
+.contact-form-card .contact-textarea::placeholder {
+    color: #64748b;
+    opacity: 1;
+}
+
+/* Focus accessibile */
+.contact-form-card .contact-input:focus,
+.contact-form-card .contact-textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
+}
+
+/* Area del messaggio */
+.contact-form-card .contact-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Testi descrittivi nella scheda */
+.contact-form-card p,
+.contact-form-card .section-description {
+    color: #475569;
+}
+
+/* Messaggi di feedback */
+.contact-form-card .contact-feedback {
+    color: #334155;
+}
+
+/* Separatore */
+.contact-form-card .contact-divider {
+    border-color: #e2e8f0;
+}
+
+/* Accessibilità: riduce le transizioni se richiesto dal sistema */
+@media (prefers-reduced-motion: reduce) {
+    .contact-form-card .contact-input,
+    .contact-form-card .contact-textarea {
+        transition: none;
+    }
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 639px) {
+    .contact-method {
+        padding: 1rem;
+    }
+
+    .contact-form-card {
+        padding: 1.25rem;
+    }
+
+    .contact-action {
+        width: 100%;
+    }
+}
+
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-method,
+    .contact-action,
+    .contact-input {
+        transition: none;
+    }
+
+    .contact-method:hover,
+    .contact-action:hover {
+        transform: none;
+    }
+}
+
 /* Responsive */
 
 @media (max-width: 767px) {
@@ -749,4 +1194,23 @@ textarea.form-control {
     opacity: 1;
     transform: none;
   }
+}
+
+/* Contact information: fix titolo su sfondo scuro */
+aside .section-title[data-i18n="contact.informationTitle"] {
+    color: #ffffff !important;
+}
+
+/* Hide the mobile hamburger menu on desktop screens */
+@media (min-width: 1024px) {
+    [data-menu-toggle] {
+        display: none !important;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    [data-mobile-menu] {
+        display: none !important;
+    }
 }

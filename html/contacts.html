@@ -1,291 +1,903 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Avessada to discuss your software requirements.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Avessada | Contact</title>
+    <meta
+        name="description"
+        content="Contact Avessada to discuss business requirements and software solutions."
+    >
 
-  <link rel="stylesheet" href="../assets/css/tailwind.css">
-  <link rel="stylesheet" href="../components.css">
+    <meta name="theme-color" content="#071426">
 
-  <script src="../js/i18n.js" defer></script>
-  <script src="../js/main.js" defer></script>
-  <script src="../js/animations.js" defer></script>
+    <title>Contact Us | Avessada</title>
+
+    <!-- Tailwind CSS compiled locally -->
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+
+    <!-- Reusable project components -->
+    <link rel="stylesheet" href="../components.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Contact page JavaScript -->
+    <script src="../js/contact-form.js" defer></script>
 </head>
 
-<body data-title-key="meta.title" data-description-key="meta.description">
+<body
+    class="min-h-screen bg-[#071426] text-slate-100 antialiased"
+    data-page="contacts"
+>
 
-  <header class="site-header">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="index.html" class="flex items-center gap-3">
-        <span class="brand-mark font-extrabold">A</span>
-        <span class="text-lg font-extrabold tracking-tight text-brand-950">Avessada<span class="text-brand-600">.</span></span>
-      </a>
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-      <nav class="hidden items-center gap-8 md:flex" aria-label="Main navigation">
-        <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
-        <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
-        <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
-        <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
-      </nav>
+    <header class="site-header">
 
-      <div class="flex items-center gap-3">
-        <div class="flex gap-1">
-          <button class="language-button" type="button" data-lang="en">EN</button>
-          <button class="language-button" type="button" data-lang="cs">CZ</button>
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
+
+            <a
+                href="index.html"
+                class="flex items-center gap-3"
+                aria-label="Avessada home"
+            >
+                <img
+                    src="../assets/images/Avessada Geometric Logo Mark.png"
+                    alt="Avessada logo"
+                    class="h-auto w-32"
+                >
+            </a>
+
+            <nav
+                class="hidden items-center gap-8 md:flex"
+                aria-label="Main navigation"
+            >
+                <a
+                    href="index.html"
+                    class="nav-link"
+                    data-i18n="nav.home"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                    data-i18n="nav.about"
+                >
+                    About
+                </a>
+
+                <a
+                    href="services.html"
+                    class="nav-link"
+                    data-i18n="nav.services"
+                >
+                    Solutions
+                </a>
+
+                <a
+                    href="contacts.html"
+                    class="nav-link"
+                    aria-current="page"
+                    data-i18n="nav.contact"
+                >
+                    Contact
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+
+                <div
+                    class="language-switcher"
+                    aria-label="Language selection"
+                >
+                    <button
+                        type="button"
+                        class="language-button"
+                        data-lang="en"
+                        aria-label="Switch to English"
+                    >
+                        EN
+                    </button>
+
+                    <button
+                        type="button"
+                        class="language-button"
+                        data-lang="cz"
+                        aria-label="Přepnout do češtiny"
+                    >
+                        CZ
+                    </button>
+                </div>
+
+                <button
+                    type="button"
+                    class="mobile-menu-button md:hidden"
+                    data-menu-toggle
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
         </div>
 
-        <button class="menu-toggle md:hidden" type="button" data-menu-toggle
-          aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open navigation menu">
-          <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <nav id="mobile-navigation" class="mobile-menu md:hidden" data-mobile-menu aria-label="Mobile navigation">
-      <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
-      <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
-      <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
-      <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="page-hero">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8" data-animate>
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <span aria-hidden="true">/</span>
-          <span data-i18n="contact.eyebrow">Contact</span>
+        <nav
+            id="mobile-menu"
+            class="mobile-menu hidden"
+            data-mobile-menu
+            aria-label="Mobile navigation"
+        >
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="about.html" data-i18n="nav.about">About</a>
+            <a href="services.html" data-i18n="nav.services">Solutions</a>
+            <a href="contacts.html" aria-current="page" data-i18n="nav.contact">Contact</a>
         </nav>
 
-        <div class="max-w-3xl">
-          <span class="section-eyebrow" data-i18n="contact.eyebrow">Contact</span>
-          <h1 class="section-title text-5xl sm:text-6xl" data-i18n="contact.title">
-            Let's start a conversation.
-          </h1>
-          <p class="section-description" data-i18n="contact.description">
-            Tell us a little about your organization and what you are looking for.
-          </p>
-        </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="section-padding">
-      <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-8">
 
-        <!-- CONTACT INFORMATION -->
-        <aside data-animate="fade-right">
-          <span class="section-eyebrow" data-i18n="contact.info.title">Get in touch</span>
+    <!-- =========================
+         MAIN
+    ========================== -->
 
-          <h2 class="mb-5 text-3xl font-extrabold tracking-tight text-brand-950">
-            Avessada<span class="text-blue-600">.</span>
-          </h2>
+    <main>
 
-          <p class="leading-8 text-slate-600" data-i18n="contact.info.text">
-            Use the contact form to introduce your requirements or ask a question about our software-related services.
-          </p>
+        <!-- Hero -->
 
-          <div class="mt-9 space-y-6">
-
-            <div class="flex items-start gap-4">
-              <div class="icon-box shrink-0">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                  <rect x="3" y="5" width="18" height="14" rx="2"/>
-                  <path d="m3 7 9 6 9-6"/>
-                </svg>
-              </div>
-
-              <div>
-                <h3 class="font-bold text-brand-950" data-i18n="contact.info.email">Email</h3>
-                <p class="mt-1 text-sm leading-6 text-slate-500">
-                  Use the form to send an enquiry.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="icon-box shrink-0">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
-                  <circle cx="12" cy="10" r="2.5"/>
-                </svg>
-              </div>
-
-              <div>
-                <h3 class="font-bold text-brand-950" data-i18n="contact.info.location">Location</h3>
-                <p class="mt-1 text-sm text-slate-500" data-i18n="contact.info.location.value">Czech Republic</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="mt-10 overflow-hidden rounded-2xl bg-brand-950 p-6 text-white">
-            <div class="mb-4 flex items-center gap-3">
-              <span class="status-dot"></span>
-              <span class="text-xs font-bold uppercase tracking-[0.15em] text-blue-200">
-                AVESSADA / CONNECT
-              </span>
-            </div>
-            <p class="text-lg font-bold leading-7" data-i18n="home.cta.title">
-              Let's find the right direction.
-            </p>
-            <p class="mt-3 text-sm leading-7 text-slate-300" data-i18n="home.cta.text">
-              Tell us what your business needs.
-            </p>
-          </div>
-        </aside>
-
-        <!-- CONTACT FORM -->
-        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-9" data-animate="fade-left">
-
-          <h2 class="mb-2 text-2xl font-extrabold text-brand-950" data-i18n="contact.form.title">
-            Send us a message
-          </h2>
-
-          <p class="mb-8 text-sm leading-6 text-slate-500">
-            Fill in the fields below and describe what you are looking for.
-          </p>
-
-          <form data-contact-form novalidate>
-
-            <div class="grid gap-6 sm:grid-cols-2">
-
-              <div>
-                <label class="form-label" for="contact-name" data-i18n="contact.form.name">Full name</label>
-                <input
-                  class="form-control"
-                  id="contact-name"
-                  name="name"
-                  type="text"
-                  autocomplete="name"
-                  required
-                  data-i18n-placeholder="contact.form.name.placeholder"
-                  placeholder="Your name"
-                >
-              </div>
-
-              <div>
-                <label class="form-label" for="contact-email" data-i18n="contact.form.email">Business email</label>
-                <input
-                  class="form-control"
-                  id="contact-email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  required
-                  data-i18n-placeholder="contact.form.email.placeholder"
-                  placeholder="you@company.com"
-                >
-              </div>
-
-              <div class="sm:col-span-2">
-                <label class="form-label" for="contact-company" data-i18n="contact.form.company">Company</label>
-                <input
-                  class="form-control"
-                  id="contact-company"
-                  name="company"
-                  type="text"
-                  autocomplete="organization"
-                  data-i18n-placeholder="contact.form.company.placeholder"
-                  placeholder="Your organization"
-                >
-              </div>
-
-              <div class="sm:col-span-2">
-                <label class="form-label" for="contact-category" data-i18n="contact.form.category">Area of interest</label>
-
-                <select class="form-control" id="contact-category" name="category" required>
-                  <option value="" data-i18n="contact.form.category.placeholder">Select a category</option>
-                  <option value="business" data-i18n="contact.form.category1">Business management</option>
-                  <option value="productivity" data-i18n="contact.form.category2">Productivity and collaboration</option>
-                  <option value="analytics" data-i18n="contact.form.category3">Data and analytics</option>
-                  <option value="security" data-i18n="contact.form.category4">Security and access</option>
-                  <option value="infrastructure" data-i18n="contact.form.category5">Infrastructure and systems</option>
-                  <option value="other" data-i18n="contact.form.category6">Other</option>
-                </select>
-              </div>
-
-              <div class="sm:col-span-2">
-                <label class="form-label" for="contact-message" data-i18n="contact.form.message">How can we help?</label>
-
-                <textarea
-                  class="form-control"
-                  id="contact-message"
-                  name="message"
-                  required
-                  data-i18n-placeholder="contact.form.message.placeholder"
-                  placeholder="Describe your requirements..."
-                ></textarea>
-              </div>
-
-            </div>
-
-            <p class="mt-5 text-xs leading-6 text-slate-500" data-i18n="contact.form.privacy">
-              By submitting this form, you agree to be contacted regarding your enquiry.
-            </p>
-
-            <div class="mt-6">
-              <button class="btn-primary w-full sm:w-auto" type="submit">
-                <span data-i18n="contact.form.submit">Send enquiry</span>
-                <span aria-hidden="true">↗</span>
-              </button>
-            </div>
+        <section class="page-hero contact-hero relative overflow-hidden px-6 py-20 lg:px-8 lg:py-28">
 
             <div
-              class="form-message mt-5"
-              data-form-message
-              aria-live="polite"
-              role="status"
+                class="contact-glow contact-glow-right"
+                aria-hidden="true"
             ></div>
 
-          </form>
+            <div
+                class="contact-glow contact-glow-left"
+                aria-hidden="true"
+            ></div>
+
+            <div class="relative mx-auto max-w-7xl">
+
+                <div class="max-w-3xl">
+
+                    <div class="section-eyebrow mb-5">
+                        <span class="status-dot" aria-hidden="true"></span>
+
+                        <span data-i18n="contact.eyebrow">
+                            LET'S START A CONVERSATION
+                        </span>
+                    </div>
+
+                    <h1
+                        class="font-heading text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl"
+                        data-i18n="contact.title"
+                    >
+                        Let's find the right solution for your business.
+                    </h1>
+
+                    <p
+                        class="mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg"
+                        data-i18n="contact.description"
+                    >
+                        Tell us what you are looking for. Share your requirements,
+                        ask a question or start a conversation about potential
+                        software solutions for your organization.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact information and form -->
+
+        <section class="section-padding px-6 py-12 lg:px-8 lg:py-20">
+
+            <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+
+                <!-- Contact information -->
+
+                <aside class="space-y-8">
+
+                    <div>
+
+                        <span
+                            class="section-eyebrow"
+                            data-i18n="contact.informationEyebrow"
+                        >
+                            GET IN TOUCH
+                        </span>
+
+                        <h2
+                            class="section-title mt-4"
+                            data-i18n="contact.informationTitle"
+                        >
+                            A clear starting point.
+                        </h2>
+
+                        <p
+                            class="section-description mt-4"
+                            data-i18n="contact.informationDescription"
+                        >
+                            Every project starts with a conversation.
+                            Tell us about your needs and we can explore
+                            the next steps together.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="contact-method">
+
+                        <div class="contact-icon" aria-hidden="true">
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                <path d="m3 7 9 6 9-6"></path>
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h3
+                                class="font-heading font-bold text-white"
+                                data-i18n="contact.emailTitle"
+                            >
+                                Email
+                            </h3>
+
+                            <p
+                                class="mt-2 text-sm leading-6 text-slate-400"
+                                data-i18n="contact.emailDescription"
+                            >
+                                Contact us directly or prepare a message
+                                using the form.
+                            </p>
+
+                            <a
+                                id="contact-direct-email"
+                                class="mt-3 inline-block break-all text-sm font-semibold text-blue-300 hover:text-blue-200"
+                                href="#contact-form"
+                                data-i18n="contact.emailPlaceholder"
+                            >
+                                Email address to be configured
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Business enquiries -->
+
+                    <div class="contact-method">
+
+                        <div class="contact-icon" aria-hidden="true">
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect x="3" y="7" width="18" height="14" rx="2"></rect>
+                                <path d="M8 7V4h8v3"></path>
+                                <path d="M3 12h18"></path>
+                                <path d="M10 12v2h4v-2"></path>
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h3
+                                class="font-heading font-bold text-white"
+                                data-i18n="contact.businessTitle"
+                            >
+                                Business enquiries
+                            </h3>
+
+                            <p
+                                class="mt-2 text-sm leading-6 text-slate-400"
+                                data-i18n="contact.businessDescription"
+                            >
+                                Discuss business requirements, software
+                                categories or potential collaborations.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Privacy information -->
+
+                    <div class="contact-privacy-card">
+
+                        <div class="contact-privacy-icon" aria-hidden="true">
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"></path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h3
+                                class="font-heading text-sm font-bold text-white"
+                                data-i18n="contact.privacyTitle"
+                            >
+                                Your information
+                            </h3>
+
+                            <p
+                                class="mt-2 text-sm leading-6 text-slate-400"
+                                data-i18n="contact.privacyDescription"
+                            >
+                                This form prepares a message in your email
+                                application. It does not send your information
+                                to a server through this website.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- Contact form -->
+
+                <div class="contact-form-card shadow-card rounded-3xl border border-slate-700/50 bg-slate-900/60 p-6 sm:p-8 lg:p-10">
+
+                    <div class="mb-8">
+
+                        <span
+                            class="section-eyebrow"
+                            data-i18n="contact.formEyebrow"
+                        >
+                            CONTACT FORM
+                        </span>
+
+                        <h2
+                            class="section-title mt-4"
+                            data-i18n="contact.formTitle"
+                        >
+                            Tell us about your request.
+                        </h2>
+
+                        <p
+                            class="mt-3 text-sm leading-7 text-slate-400"
+                            data-i18n="contact.formDescription"
+                        >
+                            Complete the fields below. Your message will be
+                            prepared in your preferred email service.
+                        </p>
+
+                    </div>
+
+
+                    <form id="contact-form">
+
+                        <!-- Name and email -->
+
+                        <div class="grid gap-6 sm:grid-cols-2">
+
+                            <div>
+
+                                <label
+                                    for="contact-name"
+                                    class="contact-label"
+                                    data-i18n="contact.nameLabel"
+                                >
+                                    Full name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contact-name"
+                                    name="name"
+                                    class="contact-input"
+                                    placeholder="Your name"
+                                    data-i18n-placeholder="contact.namePlaceholder"
+                                    autocomplete="name"
+                                    maxlength="120"
+                                    required
+                                >
+
+                            </div>
+
+                            <div>
+
+                                <label
+                                    for="contact-email"
+                                    class="contact-label"
+                                    data-i18n="contact.emailLabel"
+                                >
+                                    Work email *
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="contact-email"
+                                    name="email"
+                                    class="contact-input"
+                                    placeholder="you@company.com"
+                                    data-i18n-placeholder="contact.emailInputPlaceholder"
+                                    autocomplete="email"
+                                    maxlength="254"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Company -->
+
+                        <div class="mt-6">
+
+                            <label
+                                for="contact-company"
+                                class="contact-label"
+                                data-i18n="contact.companyLabel"
+                            >
+                                Company (optional)
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contact-company"
+                                name="company"
+                                class="contact-input"
+                                placeholder="Your organization"
+                                data-i18n-placeholder="contact.companyPlaceholder"
+                                autocomplete="organization"
+                                maxlength="160"
+                            >
+
+                        </div>
+
+
+                        <!-- Subject -->
+
+                        <div class="mt-6">
+
+                            <label
+                                for="contact-subject"
+                                class="contact-label"
+                                data-i18n="contact.subjectLabel"
+                            >
+                                What can we help you with? *
+                            </label>
+
+                            <select
+                                id="contact-subject"
+                                name="subject"
+                                class="contact-input"
+                                required
+                            >
+
+                                <option
+                                    value=""
+                                    selected
+                                    disabled
+                                    data-i18n="contact.subjectDefault"
+                                >
+                                    Select a topic
+                                </option>
+
+                                <option
+                                    value="Software enquiry"
+                                    data-i18n="contact.subjectSoftware"
+                                >
+                                    Software enquiry
+                                </option>
+
+                                <option
+                                    value="Business collaboration"
+                                    data-i18n="contact.subjectCollaboration"
+                                >
+                                    Business collaboration
+                                </option>
+
+                                <option
+                                    value="Product information"
+                                    data-i18n="contact.subjectInformation"
+                                >
+                                    Product information
+                                </option>
+
+                                <option
+                                    value="Other enquiry"
+                                    data-i18n="contact.subjectOther"
+                                >
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Message -->
+
+                        <div class="mt-6">
+
+                            <label
+                                for="contact-message"
+                                class="contact-label"
+                                data-i18n="contact.messageLabel"
+                            >
+                                Your message *
+                            </label>
+
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                class="contact-input contact-textarea"
+                                rows="6"
+                                minlength="10"
+                                maxlength="5000"
+                                placeholder="Tell us a little about your requirements..."
+                                data-i18n-placeholder="contact.messagePlaceholder"
+                                required
+                            ></textarea>
+
+                            <p
+                                class="mt-2 text-xs leading-5 text-slate-500"
+                                data-i18n="contact.messageHint"
+                            >
+                                Please include any details that may help us
+                                understand your request.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Accessible feedback -->
+
+                        <div
+                            id="contact-feedback"
+                            class="contact-feedback mt-6"
+                            role="status"
+                            aria-live="polite"
+                            hidden
+                        ></div>
+
+
+                        <!-- Email actions -->
+
+                        <div class="contact-divider my-8"></div>
+
+                        <div class="flex flex-col gap-3">
+
+                            <button
+                                type="submit"
+                                id="contact-email-submit"
+                                class="contact-action contact-action-primary w-full"
+                            >
+
+                                <span data-i18n="contact.openEmail">
+                                    Open email application
+                                </span>
+
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M7 17 17 7"></path>
+                                    <path d="M7 7h10v10"></path>
+                                </svg>
+
+                            </button>
+
+
+                            <a
+                                id="contact-gmail-fallback"
+                                href="https://mail.google.com/mail/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-action contact-action-secondary w-full"
+                            >
+
+                                <span data-i18n="contact.openGmail">
+                                    Continue with Gmail
+                                </span>
+
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="m10 14 11-11"></path>
+                                    <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+
+                            </a>
+
+                        </div>
+
+
+                        <p
+                            class="mt-4 text-center text-xs leading-6 text-slate-500"
+                            data-i18n="contact.sendNotice"
+                        >
+                            Your email application will open with your message
+                            prepared. Review it and press Send.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final CTA -->
+
+        <section class="px-6 pb-20 lg:px-8">
+
+            <div class="cta-panel mx-auto max-w-7xl rounded-3xl p-8 sm:p-12 lg:p-16">
+
+                <div class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+
+                    <div class="max-w-2xl">
+
+                        <span
+                            class="section-eyebrow"
+                            data-i18n="contact.ctaEyebrow"
+                        >
+                            HAVE A QUESTION?
+                        </span>
+
+                        <h2
+                            class="mt-4 font-heading text-2xl font-extrabold tracking-tight text-white sm:text-3xl lg:text-4xl"
+                            data-i18n="contact.ctaTitle"
+                        >
+                            Start with a conversation.
+                        </h2>
+
+                        <p
+                            class="mt-4 max-w-xl leading-7 text-slate-300"
+                            data-i18n="contact.ctaDescription"
+                        >
+                            A clear understanding of your needs is the first
+                            step towards finding a suitable solution.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="services.html"
+                        class="btn-white inline-flex shrink-0 items-center justify-center gap-2"
+                    >
+                        <span data-i18n="contact.ctaButton">
+                            Explore our solutions
+                        </span>
+
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+                <div class="lg:col-span-2">
+
+                    <a href="index.html" class="flex items-center gap-3" aria-label="Avessada home">
+          <img src="../assets/images/White and Blue AVESSADA Logo.png" alt="Avessada logo" class="w-32 h-auto">
+        </a>
+
+                    <p
+                        class="max-w-md text-sm leading-7 text-slate-400"
+                        data-i18n="footer.description"
+                    >
+                        Exploring software categories and business technology
+                        solutions to help organizations identify suitable tools.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h2
+                        class="mb-4 font-heading text-sm font-bold text-white"
+                        data-i18n="footer.navigation"
+                    >
+                        Navigation
+                    </h2>
+
+                    <ul class="space-y-3 text-sm text-slate-400">
+
+                        <li>
+                            <a
+                                href="index.html"
+                                class="footer-link"
+                                data-i18n="nav.home"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="about.html"
+                                class="footer-link"
+                                data-i18n="nav.about"
+                            >
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="services.html"
+                                class="footer-link"
+                                data-i18n="nav.services"
+                            >
+                                Solutions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="contacts.html"
+                                class="footer-link"
+                                aria-current="page"
+                                data-i18n="nav.contact"
+                            >
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h2
+                        class="mb-4 font-heading text-sm font-bold text-white"
+                        data-i18n="footer.contactTitle"
+                    >
+                        Get in touch
+                    </h2>
+
+                    <p
+                        class="text-sm leading-7 text-slate-400"
+                        data-i18n="footer.contactDescription"
+                    >
+                        Use the contact form to prepare an email
+                        with your enquiry.
+                    </p>
+
+                    <a
+                        href="#contact-form"
+                        class="footer-link mt-3 inline-block text-sm"
+                        data-i18n="footer.contactLink"
+                    >
+                        Contact us →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-divider my-8"></div>
+
+            <div class="footer-bottom flex flex-col gap-3 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+
+                <p>
+                    © <span data-current-year></span> Avessada.
+                    <span data-i18n="footer.rights">
+                        All rights reserved.
+                    </span>
+                </p>
+
+                <p data-i18n="footer.disclaimer">
+                    Software categories shown are illustrative and do not
+                    guarantee the availability of specific products.
+                </p>
+
+            </div>
+
         </div>
 
-      </div>
-    </section>
+    </footer>
 
-  </main>
 
-  <footer class="site-footer">
-    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
-      <div class="sm:col-span-2">
-        <a href="index.html" class="flex items-center gap-3 text-white">
-          <span class="brand-mark font-extrabold">A</span>
-          <span class="text-lg font-extrabold">Avessada.</span>
-        </a>
-        <p class="mt-5 max-w-sm leading-7 text-slate-400" data-i18n="footer.description">Software solutions and technology options for modern businesses.</p>
-      </div>
+    <!-- Existing global scripts -->
 
-      <div>
-        <h3 class="mb-5 font-bold text-white" data-i18n="footer.navigation">Navigation</h3>
-        <ul class="space-y-3 text-sm">
-          <li><a class="footer-link" href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a class="footer-link" href="about.html" data-i18n="nav.about">About us</a></li>
-          <li><a class="footer-link" href="services.html" data-i18n="nav.services">Solutions</a></li>
-          <li><a class="footer-link" href="contacts.html" data-i18n="nav.contacts">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="mb-5 font-bold text-white" data-i18n="footer.contact">Get in touch</h3>
-        <a class="footer-link text-sm" href="contacts.html" data-i18n="nav.cta">Let's talk</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-slate-500 sm:flex-row sm:justify-between lg:px-8">
-        <p>© <span data-current-year></span> Avessada. <span data-i18n="footer.rights">All rights reserved.</span></p>
-        <p data-i18n="footer.disclaimer">Software categories are illustrative and do not imply specific product availability.</p>
-      </div>
-    </div>
-  </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/animations.js" defer></script>
 
 </body>
 </html>
