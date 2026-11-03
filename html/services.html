@@ -1,283 +1,1230 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore general software categories for modern businesses.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Discover Avessada's advanced encryption solutions, combining image-based positioning and hardware-based device encryption."
+    >
 
-  <title>Avessada | Software Solutions</title>
+    <title>Avessada | Advanced Security Solutions</title>
 
-  <link rel="stylesheet" href="../assets/css/tailwind.css">
-  <link rel="stylesheet" href="../components.css">
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <link rel="stylesheet" href="../components.css">
 
-  <script src="../js/i18n.js" defer></script>
-  <script src="../js/main.js" defer></script>
-  <script src="../js/animations.js" defer></script>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/animations.js" defer></script>
 </head>
 
 <body data-title-key="meta.title" data-description-key="meta.description">
 
-  <header class="site-header">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-       <a href="index.html" class="flex items-center gap-3" aria-label="Avessada home">
-        <img src="../assets/images/Avessada Geometric Logo Mark.png" alt="Avessada logo" class="w-32 h-auto">
-      </a>
+    <header class="site-header">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
 
-      <nav class="hidden items-center gap-8 md:flex" aria-label="Main navigation">
-        <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
-        <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
-        <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
-        <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
-      </nav>
+            <a href="index.html" class="flex items-center gap-3" aria-label="Avessada home">
+                <img
+                    src="../assets/images/Avessada Geometric Logo Mark.png"
+                    alt="Avessada logo"
+                    class="w-32 h-auto"
+                >
+            </a>
 
-      <div class="flex items-center gap-3">
-        <div class="flex gap-1">
-          <button class="language-button" type="button" data-lang="en">EN</button>
-          <button class="language-button" type="button" data-lang="cs">CZ</button>
+            <nav class="hidden items-center gap-8 md:flex" aria-label="Main navigation">
+                <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
+                <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
+                <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
+                <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+
+                <div class="flex gap-1">
+                    <button class="language-button" type="button" data-lang="en">EN</button>
+                    <button class="language-button" type="button" data-lang="cz">CZ</button>
+                </div>
+
+                <a href="contacts.html" class="btn-primary hidden sm:inline-flex">
+                    <span data-i18n="nav.cta">Let's talk</span>
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+                <button
+                    class="menu-toggle md:hidden"
+                    type="button"
+                    data-menu-toggle
+                    aria-expanded="false"
+                    aria-controls="mobile-navigation"
+                    aria-label="Open navigation menu"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="23"
+                        height="23"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        aria-hidden="true"
+                    >
+                        <path d="M4 7h16M4 12h16M4 17h16"/>
+                    </svg>
+                </button>
+
+            </div>
         </div>
 
-        <a href="contacts.html" class="btn-primary hidden sm:inline-flex">
-          <span data-i18n="nav.cta">Let's talk</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <button class="menu-toggle md:hidden" type="button" data-menu-toggle
-          aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open navigation menu">
-          <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <nav id="mobile-navigation" class="mobile-menu md:hidden" data-mobile-menu aria-label="Mobile navigation">
-      <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
-      <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
-      <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
-      <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="page-hero">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8" data-animate>
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <span aria-hidden="true">/</span>
-          <span data-i18n="services.eyebrow">Our solutions</span>
+        <nav
+            id="mobile-navigation"
+            class="mobile-menu md:hidden"
+            data-mobile-menu
+            aria-label="Mobile navigation"
+        >
+            <a href="index.html" class="nav-link" data-page="index.html" data-i18n="nav.home">Home</a>
+            <a href="about.html" class="nav-link" data-page="about.html" data-i18n="nav.about">About us</a>
+            <a href="services.html" class="nav-link" data-page="services.html" data-i18n="nav.services">Solutions</a>
+            <a href="contacts.html" class="nav-link" data-page="contacts.html" data-i18n="nav.contacts">Contact</a>
         </nav>
+    </header>
 
-        <div class="max-w-3xl">
-          <span class="section-eyebrow" data-i18n="services.eyebrow">Our solutions</span>
-          <h1 class="section-title text-5xl sm:text-6xl" data-i18n="services.title">
-            Explore the software landscape.
-          </h1>
-          <p class="section-description" data-i18n="services.description">
-            Discover general software categories that can support different business functions.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- SOFTWARE CATEGORIES -->
-    <section class="section-padding">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <main>
 
-        <div class="mb-10 flex items-start gap-3 rounded-xl border border-blue-100 bg-blue-50 p-4 text-sm leading-6 text-blue-900" data-animate>
-          <span class="text-lg" aria-hidden="true">ⓘ</span>
-          <p data-i18n="services.notice">
-            The categories below are illustrative. Availability and suitability depend on individual requirements.
-          </p>
-        </div>
+        <!-- HERO -->
 
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <section class="page-hero">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8" data-animate>
 
-          <article class="service-card" data-animate>
-            <div class="icon-box mb-6">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="16" rx="2"/>
-                <path d="M3 9h18M8 4v5M8 13h8M8 16h5"/>
-              </svg>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <span aria-hidden="true">/</span>
+                    <span data-i18n="services.eyebrow">Our solutions</span>
+                </nav>
+
+                <div class="max-w-4xl">
+                    <span class="section-eyebrow" data-i18n="services.eyebrow">
+                        Advanced security
+                    </span>
+
+                    <h1
+                        class="section-title text-5xl sm:text-6xl"
+                        data-i18n="services.title"
+                    >
+                        A different approach to digital protection.
+                    </h1>
+
+                    <p
+                        class="section-description"
+                        data-i18n="services.description"
+                    >
+                        Explore two distinct encryption concepts designed around
+                        the relationship between digital identity, physical
+                        positioning and hardware-based protection.
+                    </p>
+                </div>
+
             </div>
-            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service1.title">Business management</h2>
-            <p class="leading-7 text-slate-600" data-i18n="service1.text">
-              Software categories for organizing operations, information and everyday business activities.
-            </p>
-            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
-              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
-            </a>
-          </article>
+        </section>
 
-          <article class="service-card" data-animate>
-            <div class="icon-box mb-6">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                <circle cx="9" cy="8" r="3"/>
-                <circle cx="17" cy="9" r="2"/>
-                <path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14c3.3 0 5 2 5 4"/>
-              </svg>
-            </div>
-            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service2.title">Productivity and collaboration</h2>
-            <p class="leading-7 text-slate-600" data-i18n="service2.text">
-              Tools for team communication, document workflows and coordinated work.
-            </p>
-            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
-              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
-            </a>
-          </article>
 
-          <article class="service-card" data-animate>
-            <div class="icon-box mb-6">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                <path d="M4 19V5M4 19h17"/>
-                <path d="m7 15 4-5 3 2 5-7"/>
-              </svg>
-            </div>
-            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service3.title">Data and analytics</h2>
-            <p class="leading-7 text-slate-600" data-i18n="service3.text">
-              Solutions that help organize information, explore trends and support informed decisions.
-            </p>
-            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
-              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
-            </a>
-          </article>
+        <!-- INTRODUCTION -->
 
-          <article class="service-card" data-animate>
-            <div class="icon-box mb-6">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                <rect x="4" y="10" width="16" height="11" rx="2"/>
-                <path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/>
-              </svg>
-            </div>
-            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service4.title">Security and access</h2>
-            <p class="leading-7 text-slate-600" data-i18n="service4.text">
-              Software categories related to identity management, access control and digital protection.
-            </p>
-            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
-              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
-            </a>
-          </article>
+        <section class="section-padding">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
 
-          <article class="service-card" data-animate>
-            <div class="icon-box mb-6">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="7" rx="2"/>
-                <rect x="3" y="14" width="18" height="7" rx="2"/>
-                <path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/>
-              </svg>
-            </div>
-            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service5.title">Infrastructure and systems</h2>
-            <p class="leading-7 text-slate-600" data-i18n="service5.text">
-              Tools for managing software environments, system operations and digital resources.
-            </p>
-            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
-              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
-            </a>
-          </article>
+                <div class="mb-14 max-w-3xl" data-animate>
+                    <span class="section-eyebrow" data-i18n="services.intro.eyebrow">
+                        A focused approach
+                    </span>
 
-          <article class="service-card" data-animate>
-            <div class="icon-box mb-6">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                <path d="m12 3 2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3Z"/>
-                <path d="m19 15 1.2 2.8L23 19l-2.8 1.2L19 23l-1.2-2.8L15 19l2.8-1.2L19 15Z"/>
-              </svg>
+                    <h2
+                        class="section-title"
+                        data-i18n="services.intro.title"
+                    >
+                        Security built around different principles.
+                    </h2>
+
+                    <p
+                        class="section-description"
+                        data-i18n="services.intro.text"
+                    >
+                        Digital environments require protection that takes
+                        different devices, infrastructures and operational
+                        requirements into consideration. Avessada presents
+                        two encryption-oriented solutions that approach this
+                        challenge from different perspectives.
+                    </p>
+                </div>
+
+
+                <!-- PRODUCT 01 -->
+
+                <article class="mb-20" data-animate>
+
+                    <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+
+                        <div class="lg:col-span-5">
+
+                            <div class="rounded-2xl border border-blue-100 bg-blue-50 p-8 sm:p-10">
+
+                                <div class="mb-10 flex items-center justify-between">
+                                    <span class="text-sm font-bold tracking-widest text-blue-700">
+                                        PRODUCT / 01
+                                    </span>
+
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                </div>
+
+                                <div class="mb-8 flex h-5 w-5 items-center justify-center rounded-2xl bg-white shadow-card">
+                                    <svg
+                                        class="h-5 w-5 text-blue-700"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        aria-hidden="true"
+                                    >
+                                        <rect x="3" y="3" width="18" height="18" rx="3"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <path d="m21 15-5-5L5 21"/>
+                                        <path d="M15 3v4M13 5h4"/>
+                                    </svg>
+                                </div>
+
+                                <span
+                                    class="section-eyebrow"
+                                    data-i18n="product1.category"
+                                >
+                                    Image-based encryption
+                                </span>
+
+                                <h2
+                                    class="mb-5 text-3xl font-extrabold leading-tight text-brand-950 sm:text-4xl"
+                                    data-i18n="product1.title"
+                                >
+                                    Image-based positional encryption
+                                </h2>
+
+                                <p
+                                    class="leading-7 text-slate-600"
+                                    data-i18n="product1.summary"
+                                >
+                                    An encryption concept in which a specific
+                                    image and its designated position work
+                                    together as the foundation of a
+                                    device-oriented protection process.
+                                </p>
+
+                                <div class="mt-8 border-t border-blue-200 pt-6">
+                                    <span
+                                        class="text-xs font-bold uppercase tracking-widest text-blue-700"
+                                        data-i18n="product1.label"
+                                    >
+                                        Core principle
+                                    </span>
+
+                                    <p
+                                        class="mt-2 text-lg font-semibold text-brand-950"
+                                        data-i18n="product1.core"
+                                    >
+                                        The image matters. Its position matters too.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="lg:col-span-7">
+
+                            <div class="mb-8">
+                                <span
+                                    class="section-eyebrow"
+                                    data-i18n="product1.overview.eyebrow"
+                                >
+                                    Product overview
+                                </span>
+
+                                <h3
+                                    class="mb-4 text-2xl font-bold text-brand-950"
+                                    data-i18n="product1.overview.title"
+                                >
+                                    A specific image, a specific position, a specific configuration.
+                                </h3>
+
+                                <p
+                                    class="leading-8 text-slate-600"
+                                    data-i18n="product1.overview.text1"
+                                >
+                                    This solution is based on the use of a
+                                    designated image associated with a precise
+                                    position within the environment where the
+                                    encryption process is configured. Rather
+                                    than treating the image as an isolated
+                                    visual element, the concept gives importance
+                                    to the relationship between the image and
+                                    the location in which it is placed.
+                                </p>
+
+                                <p
+                                    class="mt-4 leading-8 text-slate-600"
+                                    data-i18n="product1.overview.text2"
+                                >
+                                    The same image placed in a different
+                                    position does not represent the same
+                                    configuration. Its location is therefore
+                                    an essential part of the underlying
+                                    concept. This creates a position-dependent
+                                    approach in which the expected image and
+                                    its designated environment must correspond.
+                                </p>
+                            </div>
+
+
+                            <div class="mb-8 rounded-xl border border-slate-200 p-6 sm:p-8">
+
+                                <h3
+                                    class="mb-6 text-xl font-bold text-brand-950"
+                                    data-i18n="product1.how.title"
+                                >
+                                    How the concept works
+                                </h3>
+
+                                <div class="space-y-6">
+
+                                    <div class="flex gap-4">
+                                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 font-bold text-blue-700">
+                                            01
+                                        </span>
+
+                                        <div>
+                                            <h4
+                                                class="mb-1 font-bold text-brand-950"
+                                                data-i18n="product1.step1.title"
+                                            >
+                                                Image selection
+                                            </h4>
+
+                                            <p
+                                                class="leading-7 text-slate-600"
+                                                data-i18n="product1.step1.text"
+                                            >
+                                                A specific image is designated
+                                                as part of the encryption
+                                                configuration.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 font-bold text-blue-700">
+                                            02
+                                        </span>
+
+                                        <div>
+                                            <h4
+                                                class="mb-1 font-bold text-brand-950"
+                                                data-i18n="product1.step2.title"
+                                            >
+                                                Positional association
+                                            </h4>
+
+                                            <p
+                                                class="leading-7 text-slate-600"
+                                                data-i18n="product1.step2.text"
+                                            >
+                                                The image is associated with
+                                                a defined position within the
+                                                target environment.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 font-bold text-blue-700">
+                                            03
+                                        </span>
+
+                                        <div>
+                                            <h4
+                                                class="mb-1 font-bold text-brand-950"
+                                                data-i18n="product1.step3.title"
+                                            >
+                                                Configuration correspondence
+                                            </h4>
+
+                                            <p
+                                                class="leading-7 text-slate-600"
+                                                data-i18n="product1.step3.text"
+                                            >
+                                                The intended image and its
+                                                designated position form the
+                                                reference configuration for
+                                                the solution.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <h3
+                                    class="mb-4 text-xl font-bold text-brand-950"
+                                    data-i18n="product1.environments.title"
+                                >
+                                    Designed for different digital environments
+                                </h3>
+
+                                <p
+                                    class="leading-8 text-slate-600"
+                                    data-i18n="product1.environments.text"
+                                >
+                                    The concept is intended to be considered
+                                    across different types of digital
+                                    environments. Depending on the specific
+                                    implementation, these may include servers,
+                                    desktop computers, mobile phones and other
+                                    compatible devices or systems. The central
+                                    idea remains the same: the image and its
+                                    designated position are treated as connected
+                                    elements of the configuration.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="mt-10 grid gap-5 sm:grid-cols-3">
+
+                        <div class="feature-card">
+                            <h3
+                                class="mb-2 text-lg font-bold text-brand-950"
+                                data-i18n="product1.feature1.title"
+                            >
+                                Image as a reference
+                            </h3>
+
+                            <p
+                                class="leading-7 text-slate-600"
+                                data-i18n="product1.feature1.text"
+                            >
+                                A designated image becomes a central element
+                                of the encryption configuration.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <h3
+                                class="mb-2 text-lg font-bold text-brand-950"
+                                data-i18n="product1.feature2.title"
+                            >
+                                Position-dependent logic
+                            </h3>
+
+                            <p
+                                class="leading-7 text-slate-600"
+                                data-i18n="product1.feature2.text"
+                            >
+                                The location associated with the image is
+                                part of the intended configuration.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <h3
+                                class="mb-2 text-lg font-bold text-brand-950"
+                                data-i18n="product1.feature3.title"
+                            >
+                                Multiple environments
+                            </h3>
+
+                            <p
+                                class="leading-7 text-slate-600"
+                                data-i18n="product1.feature3.text"
+                            >
+                                The concept can be considered for different
+                                types of devices and digital infrastructures.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 02 -->
+
+                <article class="border-t border-slate-200 pt-20" data-animate>
+
+                    <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+
+                        <div class="lg:col-span-5">
+
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8 sm:p-10">
+
+                                <div class="mb-10 flex items-center justify-between">
+                                    <span class="text-sm font-bold tracking-widest text-blue-700">
+                                        PRODUCT / 02
+                                    </span>
+
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                </div>
+
+                                <div class="mb-8 flex h-5 w-5 items-center justify-center rounded-2xl bg-white shadow-card">
+                                    <svg
+                                        class="h-5 w-5 text-blue-700"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M8 3v5M16 3v5"/>
+                                        <path d="M6 8h12v3a6 6 0 0 1-12 0V8Z"/>
+                                        <path d="M12 17v4M9 21h6"/>
+                                        <path d="M9 11h6M12 8v6"/>
+                                    </svg>
+                                </div>
+
+                                <span
+                                    class="section-eyebrow"
+                                    data-i18n="product2.category"
+                                >
+                                    Hardware-based encryption
+                                </span>
+
+                                <h2
+                                    class="mb-5 text-3xl font-extrabold leading-tight text-brand-950 sm:text-4xl"
+                                    data-i18n="product2.title"
+                                >
+                                    USB hardware encryption
+                                </h2>
+
+                                <p
+                                    class="leading-7 text-slate-600"
+                                    data-i18n="product2.summary"
+                                >
+                                    A hardware-oriented encryption solution
+                                    built around a microchip integrated
+                                    into a USB device, designed to initiate
+                                    device encryption automatically when
+                                    connected.
+                                </p>
+
+                                <div class="mt-8 border-t border-slate-200 pt-6">
+                                    <span
+                                        class="text-xs font-bold uppercase tracking-widest text-blue-700"
+                                        data-i18n="product2.label"
+                                    >
+                                        Core principle
+                                    </span>
+
+                                    <p
+                                        class="mt-2 text-lg font-semibold text-brand-950"
+                                        data-i18n="product2.core"
+                                    >
+                                        A physical connection that initiates protection.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="lg:col-span-7">
+
+                            <div class="mb-8">
+                                <span
+                                    class="section-eyebrow"
+                                    data-i18n="product2.overview.eyebrow"
+                                >
+                                    Product overview
+                                </span>
+
+                                <h3
+                                    class="mb-4 text-2xl font-bold text-brand-950"
+                                    data-i18n="product2.overview.title"
+                                >
+                                    Hardware as the starting point for encryption.
+                                </h3>
+
+                                <p
+                                    class="leading-8 text-slate-600"
+                                    data-i18n="product2.overview.text1"
+                                >
+                                    This solution is based on a dedicated
+                                    microchip integrated into a USB device.
+                                    The USB acts as the physical carrier of
+                                    the hardware component, connecting the
+                                    solution to the device intended for
+                                    protection.
+                                </p>
+
+                                <p
+                                    class="mt-4 leading-8 text-slate-600"
+                                    data-i18n="product2.overview.text2"
+                                >
+                                    Once the USB device is connected, the
+                                    microchip is designed to initiate the
+                                    encryption process automatically. The
+                                    central objective is to make the start
+                                    of the protection process part of a
+                                    straightforward physical interaction,
+                                    rather than requiring the user to
+                                    manually begin the process each time.
+                                </p>
+                            </div>
+
+
+                            <div class="mb-8 rounded-xl border border-slate-200 p-6 sm:p-8">
+
+                                <h3
+                                    class="mb-6 text-xl font-bold text-brand-950"
+                                    data-i18n="product2.how.title"
+                                >
+                                    How the concept works
+                                </h3>
+
+                                <div class="space-y-6">
+
+                                    <div class="flex gap-4">
+                                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 font-bold text-blue-700">
+                                            01
+                                        </span>
+
+                                        <div>
+                                            <h4
+                                                class="mb-1 font-bold text-brand-950"
+                                                data-i18n="product2.step1.title"
+                                            >
+                                                Hardware integration
+                                            </h4>
+
+                                            <p
+                                                class="leading-7 text-slate-600"
+                                                data-i18n="product2.step1.text"
+                                            >
+                                                A dedicated microchip is
+                                                integrated into a USB device,
+                                                creating the physical basis
+                                                of the solution.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 font-bold text-blue-700">
+                                            02
+                                        </span>
+
+                                        <div>
+                                            <h4
+                                                class="mb-1 font-bold text-brand-950"
+                                                data-i18n="product2.step2.title"
+                                            >
+                                                Device connection
+                                            </h4>
+
+                                            <p
+                                                class="leading-7 text-slate-600"
+                                                data-i18n="product2.step2.text"
+                                            >
+                                                The USB device is connected
+                                                to the system intended to
+                                                receive the encryption process.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 font-bold text-blue-700">
+                                            03
+                                        </span>
+
+                                        <div>
+                                            <h4
+                                                class="mb-1 font-bold text-brand-950"
+                                                data-i18n="product2.step3.title"
+                                            >
+                                                Automatic initiation
+                                            </h4>
+
+                                            <p
+                                                class="leading-7 text-slate-600"
+                                                data-i18n="product2.step3.text"
+                                            >
+                                                The integrated microchip is
+                                                designed to initiate the
+                                                device encryption process
+                                                automatically.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <h3
+                                    class="mb-4 text-xl font-bold text-brand-950"
+                                    data-i18n="product2.environments.title"
+                                >
+                                    A hardware-oriented approach to device protection
+                                </h3>
+
+                                <p
+                                    class="leading-8 text-slate-600"
+                                    data-i18n="product2.environments.text"
+                                >
+                                    By placing the initiating component
+                                    inside a portable USB device, the
+                                    solution brings the starting point of
+                                    encryption into a physical format.
+                                    This approach may be relevant in
+                                    environments where a clear, repeatable
+                                    interaction is preferred and where
+                                    device-level protection is an important
+                                    consideration. Specific compatibility
+                                    and operational requirements depend
+                                    on the final implementation.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="mt-10 grid gap-5 sm:grid-cols-3">
+
+                        <div class="feature-card">
+                            <h3
+                                class="mb-2 text-lg font-bold text-brand-950"
+                                data-i18n="product2.feature1.title"
+                            >
+                                Integrated microchip
+                            </h3>
+
+                            <p
+                                class="leading-7 text-slate-600"
+                                data-i18n="product2.feature1.text"
+                            >
+                                The hardware component is integrated
+                                directly into a USB device.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <h3
+                                class="mb-2 text-lg font-bold text-brand-950"
+                                data-i18n="product2.feature2.title"
+                            >
+                                Automatic initiation
+                            </h3>
+
+                            <p
+                                class="leading-7 text-slate-600"
+                                data-i18n="product2.feature2.text"
+                            >
+                                Connecting the USB is designed to initiate
+                                the encryption process.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <h3
+                                class="mb-2 text-lg font-bold text-brand-950"
+                                data-i18n="product2.feature3.title"
+                            >
+                                Physical interaction
+                            </h3>
+
+                            <p
+                                class="leading-7 text-slate-600"
+                                data-i18n="product2.feature3.text"
+                            >
+                                The solution uses a tangible hardware
+                                component as the starting point of protection.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
             </div>
-            <h2 class="mb-3 text-xl font-bold text-brand-950" data-i18n="service6.title">Specialized software</h2>
-            <p class="leading-7 text-slate-600" data-i18n="service6.text">
-              Software for specific operational needs, depending on the organization and its requirements.
-            </p>
-            <a href="contacts.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition hover:gap-4">
-              <span data-i18n="nav.cta">Let's talk</span><span aria-hidden="true">→</span>
-            </a>
-          </article>
+        </section>
+
+
+        <!-- COMPARISON / APPROACH -->
+
+        <section class="section-padding bg-slate-50">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+                <div class="section-heading" data-animate>
+                    <span
+                        class="section-eyebrow"
+                        data-i18n="services.difference.eyebrow"
+                    >
+                        Two approaches
+                    </span>
+
+                    <h2
+                        class="section-title"
+                        data-i18n="services.difference.title"
+                    >
+                        Different concepts. One priority: protection.
+                    </h2>
+
+                    <p
+                        class="section-description"
+                        data-i18n="services.difference.text"
+                    >
+                        Both solutions focus on encryption, but their
+                        starting points are different. One is based on
+                        an image and its position; the other uses a
+                        hardware component integrated into a USB device.
+                    </p>
+                </div>
+
+
+                <div class="grid gap-6 md:grid-cols-2">
+
+                    <article class="feature-card" data-animate>
+                        <span class="mb-4 block text-sm font-bold tracking-widest text-blue-700">
+                            01 / IMAGE
+                        </span>
+
+                        <h3
+                            class="mb-3 text-xl font-bold text-brand-950"
+                            data-i18n="services.difference.one.title"
+                        >
+                            Position-based configuration
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="services.difference.one.text"
+                        >
+                            The defining elements are a designated image
+                            and the specific position associated with it
+                            within the target environment.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card" data-animate>
+                        <span class="mb-4 block text-sm font-bold tracking-widest text-blue-700">
+                            02 / HARDWARE
+                        </span>
+
+                        <h3
+                            class="mb-3 text-xl font-bold text-brand-950"
+                            data-i18n="services.difference.two.title"
+                        >
+                            Hardware-initiated encryption
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="services.difference.two.text"
+                        >
+                            The defining element is a microchip integrated
+                            into a USB device, designed to initiate
+                            encryption when connected.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- USE CASES -->
+
+        <section class="section-padding">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+                <div class="max-w-3xl" data-animate>
+                    <span
+                        class="section-eyebrow"
+                        data-i18n="services.applications.eyebrow"
+                    >
+                        Potential applications
+                    </span>
+
+                    <h2
+                        class="section-title"
+                        data-i18n="services.applications.title"
+                    >
+                        Designed with different digital environments in mind.
+                    </h2>
+
+                    <p
+                        class="section-description"
+                        data-i18n="services.applications.text"
+                    >
+                        Encryption requirements vary depending on the
+                        environment, the type of device and the nature
+                        of the information involved. These concepts can
+                        be evaluated in relation to different operational
+                        contexts.
+                    </p>
+                </div>
+
+
+                <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                    <article class="feature-card" data-animate>
+                        <div class="icon-box mb-5">
+                            <svg
+                                class="card-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                aria-hidden="true"
+                            >
+                                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                                <path d="M3 9h18M8 4v5M8 14h3"/>
+                            </svg>
+                        </div>
+
+                        <h3
+                            class="mb-2 text-lg font-bold text-brand-950"
+                            data-i18n="services.application1.title"
+                        >
+                            Business systems
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="services.application1.text"
+                        >
+                            Digital environments used for everyday
+                            organizational and business operations.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card" data-animate>
+                        <div class="icon-box mb-5">
+                            <svg
+                                class="card-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                aria-hidden="true"
+                            >
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M8 8h8v8H8zM12 3v5M12 16v5M3 12h5M16 12h5"/>
+                            </svg>
+                        </div>
+
+                        <h3
+                            class="mb-2 text-lg font-bold text-brand-950"
+                            data-i18n="services.application2.title"
+                        >
+                            IT infrastructure
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="services.application2.text"
+                        >
+                            Systems and infrastructure where data
+                            protection is an important consideration.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card" data-animate>
+                        <div class="icon-box mb-5">
+                            <svg
+                                class="card-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                aria-hidden="true"
+                            >
+                                <rect x="6" y="2" width="12" height="20" rx="2"/>
+                                <path d="M10 18h4"/>
+                            </svg>
+                        </div>
+
+                        <h3
+                            class="mb-2 text-lg font-bold text-brand-950"
+                            data-i18n="services.application3.title"
+                        >
+                            Personal devices
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="services.application3.text"
+                        >
+                            Individual devices and digital environments
+                            where information requires protection.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card" data-animate>
+                        <div class="icon-box mb-5">
+                            <svg
+                                class="card-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                aria-hidden="true"
+                            >
+                                <rect x="3" y="7" width="18" height="10" rx="2"/>
+                                <path d="M7 7V4h10v3M8 17v3M16 17v3M9 12h6"/>
+                            </svg>
+                        </div>
+
+                        <h3
+                            class="mb-2 text-lg font-bold text-brand-950"
+                            data-i18n="services.application4.title"
+                        >
+                            Connected devices
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="services.application4.text"
+                        >
+                            Other compatible devices and environments,
+                            depending on the specific implementation.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PROCESS -->
+
+        <section class="section-padding bg-slate-50">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+                <div class="section-heading" data-animate>
+                    <span
+                        class="section-eyebrow"
+                        data-i18n="services.process.eyebrow"
+                    >
+                        How we work
+                    </span>
+
+                    <h2
+                        class="section-title"
+                        data-i18n="services.process.title"
+                    >
+                        A straightforward process.
+                    </h2>
+                </div>
+
+
+                <div class="grid gap-8 md:grid-cols-3">
+
+                    <article data-animate>
+                        <span class="mb-5 block text-4xl font-extrabold text-blue-600">01</span>
+
+                        <h3
+                            class="mb-3 text-xl font-bold"
+                            data-i18n="process1.title"
+                        >
+                            Understand
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="process1.text"
+                        >
+                            We start by learning about your needs and priorities.
+                        </p>
+                    </article>
+
+
+                    <article data-animate>
+                        <span class="mb-5 block text-4xl font-extrabold text-blue-600">02</span>
+
+                        <h3
+                            class="mb-3 text-xl font-bold"
+                            data-i18n="process2.title"
+                        >
+                            Explore
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="process2.text"
+                        >
+                            We consider relevant categories and possible options.
+                        </p>
+                    </article>
+
+
+                    <article data-animate>
+                        <span class="mb-5 block text-4xl font-extrabold text-blue-600">03</span>
+
+                        <h3
+                            class="mb-3 text-xl font-bold"
+                            data-i18n="process3.title"
+                        >
+                            Connect
+                        </h3>
+
+                        <p
+                            class="leading-7 text-slate-600"
+                            data-i18n="process3.text"
+                        >
+                            We help move the conversation toward a suitable solution.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="pb-24 pt-16">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+                <div class="cta-panel" data-animate>
+                    <div class="relative z-10 max-w-2xl">
+
+                        <h2
+                            class="text-3xl font-extrabold sm:text-4xl"
+                            data-i18n="services.cta.title"
+                        >
+                            Looking for a different approach to encryption?
+                        </h2>
+
+                        <p
+                            class="mt-4 leading-7 text-slate-300"
+                            data-i18n="services.cta.text"
+                        >
+                            Get in touch with our team to learn more about
+                            these solutions, discuss their concepts and
+                            explore their potential applications.
+                        </p>
+
+                        <a href="contacts.html" class="btn-white mt-7">
+                            <span data-i18n="services.cta.button">Discuss your needs</span>
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+
+            <div class="sm:col-span-2">
+                <a href="index.html" class="flex items-center gap-3" aria-label="Avessada home">
+                    <img
+                        src="../assets/images/White and Blue AVESSADA Logo.png"
+                        alt="Avessada logo"
+                        class="w-32 h-auto"
+                    >
+                </a>
+
+                <p
+                    class="mt-5 max-w-sm leading-7 text-slate-400"
+                    data-i18n="footer.description"
+                >
+                    Software solutions and technology options for modern businesses.
+                </p>
+            </div>
+
+
+            <div>
+                <h3
+                    class="mb-5 font-bold text-white"
+                    data-i18n="footer.navigation"
+                >
+                    Navigation
+                </h3>
+
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <a class="footer-link" href="index.html" data-i18n="nav.home">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link" href="about.html" data-i18n="nav.about">About us</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link" href="services.html" data-i18n="nav.services">Solutions</a>
+                    </li>
+
+                    <li>
+                        <a class="footer-link" href="contacts.html" data-i18n="nav.contacts">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3
+                    class="mb-5 font-bold text-white"
+                    data-i18n="footer.contact"
+                >
+                    Get in touch
+                </h3>
+
+                <a
+                    class="footer-link text-sm"
+                    href="contacts.html"
+                    data-i18n="nav.cta"
+                >
+                    Let's talk
+                </a>
+            </div>
 
         </div>
-      </div>
-    </section>
 
-    <!-- PROCESS -->
-    <section class="section-padding bg-slate-50">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
 
-        <div class="section-heading" data-animate>
-          <span class="section-eyebrow" data-i18n="services.process.eyebrow">How we work</span>
-          <h2 class="section-title" data-i18n="services.process.title">A straightforward process.</h2>
+        <div class="footer-bottom">
+            <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-slate-500 sm:flex-row sm:justify-between lg:px-8">
+
+                <p>
+                    ©
+                    <span data-current-year></span>
+                    Avessada.
+                    <span data-i18n="footer.rights">All rights reserved.</span>
+                </p>
+
+                <p data-i18n="footer.disclaimer">
+                    Product descriptions are provided for general informational purposes.
+                </p>
+
+            </div>
         </div>
 
-        <div class="grid gap-8 md:grid-cols-3">
-          <article data-animate>
-            <span class="mb-5 block text-4xl font-extrabold text-blue-600">01</span>
-            <h3 class="mb-3 text-xl font-bold" data-i18n="process1.title">Understand</h3>
-            <p class="leading-7 text-slate-600" data-i18n="process1.text">We start by learning about your needs and priorities.</p>
-          </article>
-
-          <article data-animate>
-            <span class="mb-5 block text-4xl font-extrabold text-blue-600">02</span>
-            <h3 class="mb-3 text-xl font-bold" data-i18n="process2.title">Explore</h3>
-            <p class="leading-7 text-slate-600" data-i18n="process2.text">We consider relevant categories and possible options.</p>
-          </article>
-
-          <article data-animate>
-            <span class="mb-5 block text-4xl font-extrabold text-blue-600">03</span>
-            <h3 class="mb-3 text-xl font-bold" data-i18n="process3.title">Connect</h3>
-            <p class="leading-7 text-slate-600" data-i18n="process3.text">We help move the conversation toward a suitable solution.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="pb-24 pt-16">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="cta-panel" data-animate>
-          <div class="relative z-10 max-w-2xl">
-            <h2 class="text-3xl font-extrabold sm:text-4xl" data-i18n="services.cta.title">
-              Looking for a software solution?
-            </h2>
-            <p class="mt-4 leading-7 text-slate-300" data-i18n="services.cta.text">
-              Get in touch to discuss your requirements and explore the available options.
-            </p>
-            <a href="contacts.html" class="btn-white mt-7">
-              <span data-i18n="services.cta.button">Discuss your needs</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
-      <div class="sm:col-span-2">
-        <a href="index.html" class="flex items-center gap-3" aria-label="Avessada home">
-          <img src="../assets/images/White and Blue AVESSADA Logo.png" alt="Avessada logo" class="w-32 h-auto">
-          </a>
-        <p class="mt-5 max-w-sm leading-7 text-slate-400" data-i18n="footer.description">Software solutions and technology options for modern businesses.</p>
-      </div>
-      <div>
-        <h3 class="mb-5 font-bold text-white" data-i18n="footer.navigation">Navigation</h3>
-        <ul class="space-y-3 text-sm">
-          <li><a class="footer-link" href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a class="footer-link" href="about.html" data-i18n="nav.about">About us</a></li>
-          <li><a class="footer-link" href="services.html" data-i18n="nav.services">Solutions</a></li>
-          <li><a class="footer-link" href="contacts.html" data-i18n="nav.contacts">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="mb-5 font-bold text-white" data-i18n="footer.contact">Get in touch</h3>
-        <a class="footer-link text-sm" href="contacts.html" data-i18n="nav.cta">Let's talk</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-slate-500 sm:flex-row sm:justify-between lg:px-8">
-        <p>© <span data-current-year></span> Avessada. <span data-i18n="footer.rights">All rights reserved.</span></p>
-        <p data-i18n="footer.disclaimer">Software categories are illustrative and do not imply specific product availability.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>

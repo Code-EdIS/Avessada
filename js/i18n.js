@@ -128,59 +128,264 @@ const translations = {
         "about.value3.text":
             "Building professional relationships through communication and reliability.",
 
-        // =========================================
+       // =========================================
         // SERVICES
         // =========================================
 
-        "services.eyebrow": "Our solutions",
-        "services.title": "Explore the software landscape.",
+        "services.eyebrow": "Advanced security",
+
+        "services.title": "A different approach to digital protection.",
+
         "services.description":
-            "Discover general software categories that can support different business functions. The right choice depends on your specific requirements.",
-        "services.notice":
-            "The categories below are illustrative. Availability and suitability depend on individual requirements.",
+            "Explore two distinct encryption concepts designed around the relationship between digital identity, physical positioning and hardware-based protection.",
 
-        "service1.title": "Business management",
-        "service1.text":
-            "Software categories for organizing operations, information and everyday business activities.",
 
-        "service2.title": "Productivity and collaboration",
-        "service2.text":
-            "Tools for team communication, document workflows and coordinated work.",
+        // INTRODUCTION
 
-        "service3.title": "Data and analytics",
-        "service3.text":
-            "Solutions that help organize information, explore trends and support informed decisions.",
+        "services.intro.eyebrow": "A focused approach",
 
-        "service4.title": "Security and access",
-        "service4.text":
-            "Software categories related to identity management, access control and digital protection.",
+        "services.intro.title": "Security built around different principles.",
 
-        "service5.title": "Infrastructure and systems",
-        "service5.text":
-            "Tools for managing software environments, system operations and digital resources.",
+        "services.intro.text":
+            "Digital environments require protection that takes different devices, infrastructures and operational requirements into consideration. Avessada presents two encryption-oriented solutions that approach this challenge from different perspectives.",
 
-        "service6.title": "Specialized software",
-        "service6.text":
-            "Software for specific operational needs, depending on the organization and its requirements.",
+
+        // PRODUCT 01 — IMAGE-BASED ENCRYPTION
+
+        "product1.category": "Image-based encryption",
+
+        "product1.title": "Image-based positional encryption",
+
+        "product1.summary":
+            "An encryption concept in which a specific image and its designated position work together as the foundation of a device-oriented protection process.",
+
+        "product1.label": "Core principle",
+
+        "product1.core":
+            "The image matters. Its position matters too.",
+
+
+        // PRODUCT 01 — OVERVIEW
+
+        "product1.overview.eyebrow": "Product overview",
+
+        "product1.overview.title":
+            "A specific image, a specific position, a specific configuration.",
+
+        "product1.overview.text1":
+            "This solution is based on the use of a designated image associated with a precise position within the environment where the encryption process is configured. Rather than treating the image as an isolated visual element, the concept gives importance to the relationship between the image and the location in which it is placed.",
+
+        "product1.overview.text2":
+            "The same image placed in a different position does not represent the same configuration. Its location is therefore an essential part of the underlying concept. This creates a position-dependent approach in which the expected image and its designated environment must correspond.",
+
+
+        // PRODUCT 01 — PROCESS
+
+        "product1.how.title": "How the concept works",
+
+        "product1.step1.title": "Image selection",
+
+        "product1.step1.text":
+            "A specific image is designated as part of the encryption configuration.",
+
+        "product1.step2.title": "Positional association",
+
+        "product1.step2.text":
+            "The image is associated with a defined position within the target environment.",
+
+        "product1.step3.title": "Configuration correspondence",
+
+        "product1.step3.text":
+            "The intended image and its designated position form the reference configuration for the solution.",
+
+
+        // PRODUCT 01 — ENVIRONMENTS
+
+        "product1.environments.title":
+            "Designed for different digital environments",
+
+        "product1.environments.text":
+            "The concept is intended to be considered across different types of digital environments. Depending on the specific implementation, these may include servers, desktop computers, mobile phones and other compatible devices or systems. The central idea remains the same: the image and its designated position are treated as connected elements of the configuration.",
+
+
+        // PRODUCT 01 — FEATURES
+
+        "product1.feature1.title": "Image as a reference",
+
+        "product1.feature1.text":
+            "A designated image becomes a central element of the encryption configuration.",
+
+        "product1.feature2.title": "Position-dependent logic",
+
+        "product1.feature2.text":
+            "The location associated with the image is part of the intended configuration.",
+
+        "product1.feature3.title": "Multiple environments",
+
+        "product1.feature3.text":
+            "The concept can be considered for different types of devices and digital infrastructures.",
+
+
+        // PRODUCT 02 — USB HARDWARE ENCRYPTION
+
+        "product2.category": "Hardware-based encryption",
+
+        "product2.title": "USB hardware encryption",
+
+        "product2.summary":
+            "A hardware-oriented encryption solution built around a microchip integrated into a USB device, designed to initiate device encryption automatically when connected.",
+
+        "product2.label": "Core principle",
+
+        "product2.core":
+            "A physical connection that initiates protection.",
+
+
+        // PRODUCT 02 — OVERVIEW
+
+        "product2.overview.eyebrow": "Product overview",
+
+        "product2.overview.title":
+            "Hardware as the starting point for encryption.",
+
+        "product2.overview.text1":
+            "This solution is based on a dedicated microchip integrated into a USB device. The USB acts as the physical carrier of the hardware component, connecting the solution to the device intended for protection.",
+
+        "product2.overview.text2":
+            "Once the USB device is connected, the microchip is designed to initiate the encryption process automatically. The central objective is to make the start of the protection process part of a straightforward physical interaction, rather than requiring the user to manually begin the process each time.",
+
+
+        // PRODUCT 02 — PROCESS
+
+        "product2.how.title": "How the concept works",
+
+        "product2.step1.title": "Hardware integration",
+
+        "product2.step1.text":
+            "A dedicated microchip is integrated into a USB device, creating the physical basis of the solution.",
+
+        "product2.step2.title": "Device connection",
+
+        "product2.step2.text":
+            "The USB device is connected to the system intended to receive the encryption process.",
+
+        "product2.step3.title": "Automatic initiation",
+
+        "product2.step3.text":
+            "The integrated microchip is designed to initiate the device encryption process automatically.",
+
+
+        // PRODUCT 02 — ENVIRONMENTS
+
+        "product2.environments.title":
+            "A hardware-oriented approach to device protection",
+
+        "product2.environments.text":
+            "By placing the initiating component inside a portable USB device, the solution brings the starting point of encryption into a physical format. This approach may be relevant in environments where a clear, repeatable interaction is preferred and where device-level protection is an important consideration. Specific compatibility and operational requirements depend on the final implementation.",
+
+
+        // PRODUCT 02 — FEATURES
+
+        "product2.feature1.title": "Integrated microchip",
+
+        "product2.feature1.text":
+            "The hardware component is integrated directly into a USB device.",
+
+        "product2.feature2.title": "Automatic initiation",
+
+        "product2.feature2.text":
+            "Connecting the USB is designed to initiate the encryption process.",
+
+        "product2.feature3.title": "Physical interaction",
+
+        "product2.feature3.text":
+            "The solution uses a tangible hardware component as the starting point of protection.",
+
+
+        // COMPARISON
+
+        "services.difference.eyebrow": "Two approaches",
+
+        "services.difference.title":
+            "Different concepts. One priority: protection.",
+
+        "services.difference.text":
+            "Both solutions focus on encryption, but their starting points are different. One is based on an image and its position; the other uses a hardware component integrated into a USB device.",
+
+        "services.difference.one.title":
+            "Position-based configuration",
+
+        "services.difference.one.text":
+            "The defining elements are a designated image and the specific position associated with it within the target environment.",
+
+        "services.difference.two.title":
+            "Hardware-initiated encryption",
+
+        "services.difference.two.text":
+            "The defining element is a microchip integrated into a USB device, designed to initiate encryption when connected.",
+
+
+        // APPLICATIONS
+
+        "services.applications.eyebrow": "Potential applications",
+
+        "services.applications.title":
+            "Designed with different digital environments in mind.",
+
+        "services.applications.text":
+            "Encryption requirements vary depending on the environment, the type of device and the nature of the information involved. These concepts can be evaluated in relation to different operational contexts.",
+
+        "services.application1.title": "Business systems",
+
+        "services.application1.text":
+            "Digital environments used for everyday organizational and business operations.",
+
+        "services.application2.title": "IT infrastructure",
+
+        "services.application2.text":
+            "Systems and infrastructure where data protection is an important consideration.",
+
+        "services.application3.title": "Personal devices",
+
+        "services.application3.text":
+            "Individual devices and digital environments where information requires protection.",
+
+        "services.application4.title": "Connected devices",
+
+        "services.application4.text":
+            "Other compatible devices and environments, depending on the specific implementation.",
+
+
+        // PROCESS
 
         "services.process.eyebrow": "How we work",
+
         "services.process.title": "A straightforward process.",
 
         "process1.title": "Understand",
+
         "process1.text":
             "We start by learning about your needs and priorities.",
 
         "process2.title": "Explore",
+
         "process2.text":
             "We consider relevant categories and possible options.",
 
         "process3.title": "Connect",
+
         "process3.text":
             "We help move the conversation toward a suitable solution.",
 
-        "services.cta.title": "Looking for a software solution?",
+
+        // CALL TO ACTION
+
+        "services.cta.title":
+            "Looking for a different approach to encryption?",
+
         "services.cta.text":
-            "Get in touch to discuss your requirements and explore the available options.",
+            "Get in touch with our team to learn more about these solutions, discuss their concepts and explore their potential applications.",
+
         "services.cta.button": "Discuss your needs",
 
         // =========================================
@@ -205,7 +410,7 @@ const translations = {
         "contact.emailDescription":
             "Contact us directly or prepare a message using the form.",
         "contact.emailPlaceholder":
-            "Email address to be configured",
+            "info@avessada.com",
 
         "contact.businessTitle": "Business enquiries",
         "contact.businessDescription":
@@ -440,60 +645,264 @@ const translations = {
             "Budujeme profesionální vztahy založené na komunikaci a spolehlivosti.",
 
         // =========================================
-        // SERVICES
-        // =========================================
+// SERVICES
+// =========================================
 
-        "services.eyebrow": "Naše řešení",
-        "services.title": "Objevte možnosti softwaru.",
-        "services.description":
-            "Poznejte obecné kategorie softwaru, které mohou podporovat různé firemní činnosti. Vhodná volba závisí na vašich konkrétních požadavcích.",
-        "services.notice":
-            "Níže uvedené kategorie jsou pouze orientační. Dostupnost a vhodnost závisí na konkrétních požadavcích.",
+"services.eyebrow": "Pokročilé zabezpečení",
 
-        "service1.title": "Řízení podniku",
-        "service1.text":
-            "Kategorie softwaru pro organizaci provozu, informací a každodenních firemních činností.",
+"services.title": "Jiný přístup k digitální ochraně.",
 
-        "service2.title": "Produktivita a spolupráce",
-        "service2.text":
-            "Nástroje pro týmovou komunikaci, práci s dokumenty a koordinaci činností.",
+"services.description":
+    "Objevte dvě odlišné koncepce šifrování založené na vztahu mezi digitální identitou, fyzickým umístěním a hardwarovou ochranou.",
 
-        "service3.title": "Data a analytika",
-        "service3.text":
-            "Řešení pro organizaci informací, analýzu trendů a podporu informovaného rozhodování.",
 
-        "service4.title": "Bezpečnost a přístup",
-        "service4.text":
-            "Kategorie softwaru zaměřené na správu identit, řízení přístupu a digitální ochranu.",
+// INTRODUCTION
 
-        "service5.title": "Infrastruktura a systémy",
-        "service5.text":
-            "Nástroje pro správu softwarového prostředí, systémů a digitálních zdrojů.",
+"services.intro.eyebrow": "Cílený přístup",
 
-        "service6.title": "Specializovaný software",
-        "service6.text":
-            "Software pro specifické provozní potřeby podle zaměření a požadavků organizace.",
+"services.intro.title": "Bezpečnost založená na různých principech.",
 
-        "services.process.eyebrow": "Jak pracujeme",
-        "services.process.title": "Jednoduchý a přehledný postup.",
+"services.intro.text":
+    "Digitální prostředí vyžadují ochranu, která zohledňuje různá zařízení, infrastrukturu a provozní požadavky. Avessada představuje dvě řešení zaměřená na šifrování, která k této výzvě přistupují z různých perspektiv.",
 
-        "process1.title": "Porozumění",
-        "process1.text":
-            "Nejprve poznáme vaše potřeby a priority.",
 
-        "process2.title": "Možnosti",
-        "process2.text":
-            "Prozkoumáme relevantní kategorie a dostupné možnosti.",
+// PRODUCT 01 — IMAGE-BASED ENCRYPTION
 
-        "process3.title": "Propojení",
-        "process3.text":
-            "Pomůžeme nasměrovat jednání k vhodnému řešení.",
+"product1.category": "Šifrování založené na obrazu",
 
-        "services.cta.title":
-            "Hledáte vhodné softwarové řešení?",
-        "services.cta.text":
-            "Kontaktujte nás a společně probereme vaše požadavky a dostupné možnosti.",
-        "services.cta.button": "Probrat vaše požadavky",
+"product1.title": "Polohové šifrování založené na obrazu",
+
+"product1.summary":
+    "Koncepce šifrování, ve které konkrétní obraz a jeho určené umístění společně tvoří základ ochranného procesu zaměřeného na zařízení.",
+
+"product1.label": "Základní princip",
+
+"product1.core":
+    "Obraz je důležitý. Jeho umístění také.",
+
+
+// PRODUCT 01 — OVERVIEW
+
+"product1.overview.eyebrow": "Přehled produktu",
+
+"product1.overview.title":
+    "Konkrétní obraz, konkrétní umístění, konkrétní konfigurace.",
+
+"product1.overview.text1":
+    "Toto řešení je založeno na použití určeného obrazu, který je spojen s přesnou pozicí v prostředí, ve kterém je proces šifrování nakonfigurován. Obraz není chápán pouze jako samostatný vizuální prvek. Důležitý je také vztah mezi obrazem a místem, na kterém je umístěn.",
+
+"product1.overview.text2":
+    "Stejný obraz umístěný na jiném místě nepředstavuje stejnou konfiguraci. Jeho poloha je proto zásadní součástí celého principu. Vzniká tak přístup závislý na umístění, ve kterém musí odpovídat očekávaný obraz i jeho určené prostředí.",
+
+
+// PRODUCT 01 — PROCESS
+
+"product1.how.title": "Jak tento princip funguje",
+
+"product1.step1.title": "Výběr obrazu",
+
+"product1.step1.text":
+    "Konkrétní obraz je určen jako součást konfigurace šifrování.",
+
+"product1.step2.title": "Propojení s umístěním",
+
+"product1.step2.text":
+    "Obraz je spojen s definovanou pozicí v cílovém prostředí.",
+
+"product1.step3.title": "Soulad konfigurace",
+
+"product1.step3.text":
+    "Určený obraz a jeho konkrétní umístění společně tvoří referenční konfiguraci řešení.",
+
+
+// PRODUCT 01 — ENVIRONMENTS
+
+"product1.environments.title":
+    "Navrženo pro různá digitální prostředí",
+
+"product1.environments.text":
+    "Tuto koncepci lze zvažovat pro různé typy digitálních prostředí. V závislosti na konkrétní implementaci může jít o servery, stolní počítače, mobilní telefony a další kompatibilní zařízení či systémy. Základní myšlenka zůstává stejná: obraz a jeho určené umístění jsou považovány za vzájemně propojené prvky konfigurace.",
+
+
+// PRODUCT 01 — FEATURES
+
+"product1.feature1.title": "Obraz jako referenční prvek",
+
+"product1.feature1.text":
+    "Určený obraz se stává ústřední součástí konfigurace šifrování.",
+
+"product1.feature2.title": "Princip závislý na umístění",
+
+"product1.feature2.text":
+    "Umístění spojené s obrazem je součástí zamýšlené konfigurace.",
+
+"product1.feature3.title": "Různá prostředí",
+
+"product1.feature3.text":
+    "Tuto koncepci lze zvažovat pro různé typy zařízení a digitální infrastruktury.",
+
+
+// PRODUCT 02 — USB HARDWARE ENCRYPTION
+
+"product2.category": "Hardwarové šifrování",
+
+"product2.title": "Hardwarové šifrování přes USB",
+
+"product2.summary":
+    "Hardwarově orientované řešení šifrování založené na mikročipu integrovaném do zařízení USB, které je navrženo tak, aby po připojení automaticky spustilo šifrování zařízení.",
+
+"product2.label": "Základní princip",
+
+"product2.core":
+    "Fyzické připojení, které spouští ochranu.",
+
+
+// PRODUCT 02 — OVERVIEW
+
+"product2.overview.eyebrow": "Přehled produktu",
+
+"product2.overview.title":
+    "Hardware jako výchozí bod šifrování.",
+
+"product2.overview.text1":
+    "Toto řešení je založeno na specializovaném mikročipu integrovaném do zařízení USB. USB slouží jako fyzický nosič hardwarové součásti a propojuje řešení se zařízením, které má být chráněno.",
+
+"product2.overview.text2":
+    "Po připojení zařízení USB je mikročip navržen tak, aby automaticky zahájil proces šifrování. Hlavním cílem je začlenit spuštění ochranného procesu do jednoduché fyzické interakce, místo aby uživatel musel pokaždé celý proces zahajovat ručně.",
+
+
+// PRODUCT 02 — PROCESS
+
+"product2.how.title": "Jak tento princip funguje",
+
+"product2.step1.title": "Integrace hardwaru",
+
+"product2.step1.text":
+    "Specializovaný mikročip je integrován do zařízení USB a tvoří fyzický základ celého řešení.",
+
+"product2.step2.title": "Připojení zařízení",
+
+"product2.step2.text":
+    "Zařízení USB je připojeno k systému, ve kterém má být proces šifrování spuštěn.",
+
+"product2.step3.title": "Automatické spuštění",
+
+"product2.step3.text":
+    "Integrovaný mikročip je navržen tak, aby automaticky zahájil proces šifrování zařízení.",
+
+
+// PRODUCT 02 — ENVIRONMENTS
+
+"product2.environments.title":
+    "Hardwarový přístup k ochraně zařízení",
+
+"product2.environments.text":
+    "Umístěním spouštěcí komponenty do přenosného zařízení USB přináší toto řešení počáteční bod šifrování do fyzické podoby. Tento přístup může být relevantní v prostředích, kde je žádoucí jasná a opakovatelná interakce a kde je ochrana zařízení důležitým požadavkem. Konkrétní kompatibilita a provozní požadavky závisí na konečné implementaci.",
+
+
+// PRODUCT 02 — FEATURES
+
+"product2.feature1.title": "Integrovaný mikročip",
+
+"product2.feature1.text":
+    "Hardwarová komponenta je integrována přímo do zařízení USB.",
+
+"product2.feature2.title": "Automatické spuštění",
+
+"product2.feature2.text":
+    "Připojení USB je navrženo tak, aby zahájilo proces šifrování.",
+
+"product2.feature3.title": "Fyzická interakce",
+
+"product2.feature3.text":
+    "Řešení využívá hmatatelnou hardwarovou komponentu jako výchozí bod ochrany.",
+
+
+// COMPARISON
+
+"services.difference.eyebrow": "Dva přístupy",
+
+"services.difference.title":
+    "Odlišné koncepce. Jeden cíl: ochrana.",
+
+"services.difference.text":
+    "Obě řešení se zaměřují na šifrování, ale vycházejí z odlišných principů. Jedno je založeno na obrazu a jeho umístění, druhé využívá hardwarovou komponentu integrovanou do zařízení USB.",
+
+"services.difference.one.title":
+    "Konfigurace založená na umístění",
+
+"services.difference.one.text":
+    "Rozhodujícími prvky jsou určený obraz a konkrétní pozice, která je s ním spojena v cílovém prostředí.",
+
+"services.difference.two.title":
+    "Šifrování spouštěné hardwarem",
+
+"services.difference.two.text":
+    "Základním prvkem je mikročip integrovaný do zařízení USB, který je navržen tak, aby po připojení zahájil šifrování.",
+
+
+// APPLICATIONS
+
+"services.applications.eyebrow": "Možnosti využití",
+
+"services.applications.title":
+    "Navrženo s ohledem na různá digitální prostředí.",
+
+"services.applications.text":
+    "Požadavky na šifrování se liší podle prostředí, typu zařízení a povahy zpracovávaných informací. Tyto koncepce lze posuzovat v souvislosti s různými provozními situacemi.",
+
+"services.application1.title": "Firemní systémy",
+
+"services.application1.text":
+    "Digitální prostředí využívaná pro každodenní organizační a firemní činnosti.",
+
+"services.application2.title": "IT infrastruktura",
+
+"services.application2.text":
+    "Systémy a infrastruktura, ve kterých je ochrana dat důležitým hlediskem.",
+
+"services.application3.title": "Osobní zařízení",
+
+"services.application3.text":
+    "Jednotlivá zařízení a digitální prostředí, ve kterých je potřeba chránit informace.",
+
+"services.application4.title": "Propojená zařízení",
+
+"services.application4.text":
+    "Další kompatibilní zařízení a prostředí v závislosti na konkrétní implementaci.",
+
+
+// PROCESS
+
+"services.process.eyebrow": "Jak pracujeme",
+
+"services.process.title": "Jednoduchý a přehledný postup.",
+
+"process1.title": "Porozumění",
+
+"process1.text":
+    "Nejprve poznáme vaše potřeby a priority.",
+
+"process2.title": "Možnosti",
+
+"process2.text":
+    "Prozkoumáme relevantní kategorie a dostupné možnosti.",
+
+"process3.title": "Propojení",
+
+"process3.text":
+    "Pomůžeme nasměrovat jednání k vhodnému řešení.",
+
+
+// CALL TO ACTION
+
+"services.cta.title":
+    "Hledáte jiný přístup k šifrování?",
+
+"services.cta.text":
+    "Kontaktujte náš tým a zjistěte více o těchto řešeních, jejich principech a možných oblastech využití.",
+
+"services.cta.button": "Probrat vaše požadavky",
 
         // =========================================
         // CONTACT — HERO
@@ -518,7 +927,7 @@ const translations = {
         "contact.emailDescription":
             "Kontaktujte nás přímo nebo připravte zprávu pomocí formuláře.",
         "contact.emailPlaceholder":
-            "E-mailová adresa bude doplněna",
+            "info@avessada.com",
 
         "contact.businessTitle": "Obchodní poptávky",
         "contact.businessDescription":
