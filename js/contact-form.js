@@ -12,7 +12,7 @@
  * business email address before publishing.
  */
 
-const AVESSADA_CONTACT_EMAIL = "REPLACE_WITH_REAL_EMAIL";
+const AVESSADA_CONTACT_EMAIL = "info@avessada.com";
 
 
 /* ========================================
